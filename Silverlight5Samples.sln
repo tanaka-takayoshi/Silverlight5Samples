@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Web Developer Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight5Samples", "Silverlight5Samples\Silverlight5Samples.csproj", "{0749B034-E2C4-42BA-BD10-62AE543B8CE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9} = {BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight5Samples.Web", "Silverlight5Samples.Web\Silverlight5Samples.Web.csproj", "{BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0749B034-E2C4-42BA-BD10-62AE543B8CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0749B034-E2C4-42BA-BD10-62AE543B8CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0749B034-E2C4-42BA-BD10-62AE543B8CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0749B034-E2C4-42BA-BD10-62AE543B8CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

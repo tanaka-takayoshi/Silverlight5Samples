@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Silverlight5Samples.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" xmlns:my="clr-namespace:Silverlight5Samples.Samples">
+
+    <Grid x:Name="LayoutRoot" Background="White">
+        <sdk:TabControl Name="tabControl1" TabStripPlacement="Left">
+            <sdk:TabItem Header="SoundEffect" Name="tabSE">
+                <Grid>
+                    <my:SoundEffectView x:Name="soundEffectView1" />
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem Header="TrickPlay" Name="tabItem2">
+                <Grid>
+                    <my:TricPlayView x:Name="tricPlayView1" />
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem Header="TextSpacing" Name="tabTextSpacing">
+                <Grid>
+                    <my:TextSpacing x:Name="textSpacing1" />
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem Header="OverFlow" Name="tavOverFlow">
+                <Grid Height="500" Width="500" >
+                    <my:OverFlowView x:Name="overFlowView1" />
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem Header="PivotView" Name="tabPivotView">
+                <Grid>
+                    <my:PivotViewer/>
+                </Grid>
+            </sdk:TabItem>
+            <sdk:TabItem Header="DoubleClick" Name="tabItem3">
+                <Grid />
+            </sdk:TabItem>
+            <sdk:TabItem Header="ItemSearch" Name="tabItem4">
+                <Grid />
+            </sdk:TabItem>
+            <sdk:TabItem Header="3D" Name="tabItem5">
+                <Grid />
+            </sdk:TabItem>
+        </sdk:TabControl>
+    </Grid>
+</UserControl>

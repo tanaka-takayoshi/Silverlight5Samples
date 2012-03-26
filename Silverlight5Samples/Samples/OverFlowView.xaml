@@ -1,0 +1,61 @@
+﻿<UserControl x:Class="Silverlight5Samples.Samples.OverFlowView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="500" d:DesignWidth="500">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <RichTextBlock x:Name="MasterRTB" Margin="0,0,266,460" OverflowContentTarget="{Binding ElementName=SecondBox}">
+                <Paragraph>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </Paragraph>
+            </RichTextBlock>
+            <Ellipse 
+         Name="ellipse1"
+         Stroke="Black"
+         StrokeThickness="1"
+         Fill="#FF904141" Height="223" Margin="196,12,52,264" />
+            <RichTextBlockOverflow HorizontalAlignment="Left"
+                         Margin="0,41,0,0"
+                         Name="SecondBox"
+                         OverflowContentTarget="{Binding ElementName=ThirdBox}"
+                         Width="212"
+                         Height="35"
+                         VerticalAlignment="Top" />
+            <RichTextBlockOverflow HorizontalAlignment="Left"
+                     Margin="0,73,0,0"
+                     Name="ThirdBox"
+                     OverflowContentTarget="{Binding ElementName=FourthBox}"
+                     Width="195"
+                     Height="41"
+                     VerticalAlignment="Top" />
+            <RichTextBlockOverflow HorizontalAlignment="Left"
+                     Margin="0,111,0,0"
+                     Name="FourthBox"
+                     OverflowContentTarget="{Binding ElementName=FifthBox}"
+                     Width="195"
+                     Height="57"
+                     VerticalAlignment="Top" />
+            <RichTextBlockOverflow HorizontalAlignment="Right"
+                     Margin="0,162,305,299"
+                     Name="FifthBox"
+                     OverflowContentTarget="{Binding ElementName=SixthBox}"
+                     Width="195" />
+            <RichTextBlockOverflow HorizontalAlignment="Right"
+                     Margin="0,0,266,226"
+                     Name="SixthBox"
+                     OverflowContentTarget="{Binding ElementName=SeventhBox}"
+                     Width="234"
+                     Height="71"
+                     VerticalAlignment="Bottom" />
+            <RichTextBlockOverflow HorizontalAlignment="Right"
+                     Margin="0,0,28,157"
+                     Name="SeventhBox"
+                     Width="472"
+                     Height="71"
+                     VerticalAlignment="Bottom" />
+    </Grid>
+</UserControl>
