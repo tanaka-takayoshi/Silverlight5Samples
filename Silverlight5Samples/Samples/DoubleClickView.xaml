@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="Silverlight5Samples.Samples.DoubleClickView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+    xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+    xmlns:local="clr-namespace:Silverlight5Samples.Triggers" 
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <Grid x:Name="LayoutRoot" Background="White">
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="244,63,0,0" Name="textBlock1" Text="0" VerticalAlignment="Top" Width="89" />
+        <TextBlock Height="23" Margin="174,63,162,0" Name="textBlock2" Text="ClickCount:" VerticalAlignment="Top" />
+        <Border BorderBrush="SkyBlue" BorderThickness="1" Height="53" HorizontalAlignment="Left" Margin="40,43,0,0" Name="border1" VerticalAlignment="Top" Width="110" MouseLeftButtonDown="button1_ouseLeftButtonDown">
+            <TextBlock Name="textBlock3" Text="ClickArea" />
+        </Border>
+        <Border BorderBrush="SkyBlue" BorderThickness="1" Height="53" HorizontalAlignment="Left" Margin="40,143,0,0" Name="border2" VerticalAlignment="Top" Width="110" >
+            <i:Interaction.Triggers>
+                <local:ClickTrigger ClickCount="2">
+                    <ei:CallMethodAction TargetObject="{Binding}" MethodName="OnDoubleClicked" />
+                </local:ClickTrigger>
+            </i:Interaction.Triggers>
+            <TextBlock Name="textBlock7" Text="ClickArea" />
+        </Border>
+    </Grid>
+</UserControl>

@@ -34,10 +34,14 @@
                 </Grid>
             </sdk:TabItem>
             <sdk:TabItem Header="DoubleClick" Name="tabItem3">
-                <Grid />
+                <Grid>
+                    <my:DoubleClickView x:Name="doubleClickView1" />
+                </Grid>
             </sdk:TabItem>
             <sdk:TabItem Header="ItemSearch" Name="tabItem4">
-                <Grid />
+                <Grid>
+                    <my:ItemSearchView x:Name="itemSearchView1" />
+                </Grid>
             </sdk:TabItem>
             <sdk:TabItem Header="3D" Name="tabItem5">
                 <Grid />
