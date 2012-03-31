@@ -105,6 +105,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Samples\AncestorBindingView.xaml.cs">
+      <DependentUpon>AncestorBindingView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Samples\DemoItem.cs" />
     <Compile Include="Samples\DoubleClickView.xaml.cs">
       <DependentUpon>DoubleClickView.xaml</DependentUpon>
@@ -150,6 +153,10 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Samples\AncestorBindingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Samples\SoundEffectView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

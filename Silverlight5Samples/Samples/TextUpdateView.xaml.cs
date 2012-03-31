@@ -18,8 +18,6 @@ namespace Silverlight5Samples.Samples
         public TextUpdateView()
         {
             InitializeComponent();
-
-           // DataContext = new TextViewModel();
         }
     }
 

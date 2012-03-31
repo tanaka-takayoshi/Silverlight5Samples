@@ -48,6 +48,11 @@
                     <my:TextUpdateView/>
                 </Grid>
             </sdk:TabItem>
+            <sdk:TabItem Header="Ancestor">
+                <Grid>
+                    <my:AncestorBindingView/>
+                </Grid>
+            </sdk:TabItem>
         </sdk:TabControl>
     </Grid>
 </UserControl>
