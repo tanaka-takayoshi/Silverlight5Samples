@@ -176,9 +176,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Videos\Wildlife.wmv" />
-  </ItemGroup>
-  <ItemGroup>
     <Page Include="Samples\TextSpacing.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

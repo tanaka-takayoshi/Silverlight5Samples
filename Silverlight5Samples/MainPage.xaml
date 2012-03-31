@@ -13,11 +13,6 @@
                     <my:SoundEffectView x:Name="soundEffectView1" />
                 </Grid>
             </sdk:TabItem>
-            <sdk:TabItem Header="TrickPlay" Name="tabItem2">
-                <Grid>
-                    <my:TricPlayView x:Name="tricPlayView1" />
-                </Grid>
-            </sdk:TabItem>
             <sdk:TabItem Header="TextSpacing" Name="tabTextSpacing">
                 <Grid>
                     <my:TextSpacing x:Name="textSpacing1" />
