@@ -43,8 +43,10 @@
                     <my:ItemSearchView x:Name="itemSearchView1" />
                 </Grid>
             </sdk:TabItem>
-            <sdk:TabItem Header="3D" Name="tabItem5">
-                <Grid />
+            <sdk:TabItem Header="TextUpdate">
+                <Grid>
+                    <my:TextUpdateView/>
+                </Grid>
             </sdk:TabItem>
         </sdk:TabControl>
     </Grid>

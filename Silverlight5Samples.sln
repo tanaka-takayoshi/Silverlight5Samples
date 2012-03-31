@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Web Developer Express 2010
+# Visual C# Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Silverlight5Samples", "Silverlight5Samples\Silverlight5Samples.csproj", "{0749B034-E2C4-42BA-BD10-62AE543B8CE6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9} = {BC2D3E38-7DD2-47D5-A8AA-83FAD1EB85F9}

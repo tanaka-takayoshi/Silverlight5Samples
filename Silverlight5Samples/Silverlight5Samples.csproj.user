@@ -21,7 +21,7 @@
           <ShowWebRefOnDebugPrompt>True</ShowWebRefOnDebugPrompt>
           <OutOfBrowserProjectToDebug>
           </OutOfBrowserProjectToDebug>
-          <ShowRiaSvcsOnDebugPrompt>True</ShowRiaSvcsOnDebugPrompt>
+          <ShowRiaSvcsOnDebugPrompt>False</ShowRiaSvcsOnDebugPrompt>
         </SilverlightProjectProperties>
       </FlavorProperties>
     </VisualStudio>

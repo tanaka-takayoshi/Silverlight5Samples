@@ -59,12 +59,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Expression.Drawing">
-      <HintPath>..\..\Silverlight5Sample\ClickCountSample\Microsoft.Expression.Drawing.dll</HintPath>
+      <HintPath>..\lib\Microsoft.Expression.Drawing.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Expression.Interactions">
-      <HintPath>..\..\Silverlight5Sample\ClickCountSample\Microsoft.Expression.Interactions.dll</HintPath>
+      <HintPath>..\lib\Microsoft.Expression.Interactions.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Content, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics.Extensions, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics.Shaders" />
+    <Reference Include="Microsoft.Xna.Framework.Math, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Xna.Framework.Toolkit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=2c5c654d367bf4a7, processorArchitecture=MSIL" />
     <Reference Include="mscorlib" />
     <Reference Include="System.ComponentModel.DataAnnotations, Version=5.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
     <Reference Include="System.Reactive">
@@ -85,8 +91,9 @@
     <Reference Include="System.Windows.Controls, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System.Windows.Controls.Pivot, Version=5.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
     <Reference Include="System.Windows.Interactivity">
-      <HintPath>..\..\Silverlight5Sample\ClickCountSample\System.Windows.Interactivity.dll</HintPath>
+      <HintPath>..\lib\System.Windows.Interactivity.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Xna" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Windows.Browser" />
   </ItemGroup>
@@ -118,6 +125,10 @@
       <DependentUpon>TextSpacing.xaml</DependentUpon>
     </Compile>
     <Compile Include="Samples\TextToSolidColorConverter.cs" />
+    <Compile Include="Samples\TextUpdateView.xaml.cs">
+      <DependentUpon>TextUpdateView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Samples\TextViewModel.cs" />
     <Compile Include="Samples\TricPlayView.xaml.cs">
       <DependentUpon>TricPlayView.xaml</DependentUpon>
     </Compile>
@@ -148,6 +159,10 @@
     <Resource Include="Sounds\notify.wav" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Samples\TextUpdateView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Samples\TricPlayView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

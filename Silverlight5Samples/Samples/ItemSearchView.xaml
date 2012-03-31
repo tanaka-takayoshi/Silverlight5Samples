@@ -18,7 +18,9 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <ListBox Height="223" HorizontalAlignment="Left" Margin="202,54,0,0" Name="listBox1" VerticalAlignment="Top" Width="171" TextSearch.TextPath="Description">
+        <ListBox Height="223" HorizontalAlignment="Left" Margin="202,54,0,0" 
+                 Name="listBox1" VerticalAlignment="Top" Width="171" 
+                 TextSearch.TextPath="Description">
             <ListBox.ItemTemplate>
                 <DataTemplate >
                     <StackPanel Orientation="Horizontal">
